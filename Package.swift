@@ -4,15 +4,15 @@
 import PackageDescription
 
 let package = Package(
-    name: "WebRTC",
+    name: "HiFiWebRTC",
     platforms: [
         .iOS(.v10)
     ],
     products: [
-        .library(name: "WebRTC", targets: ["WebRTC"]),
+        .library(name: "HiFiWebRTC", targets: ["HiFiWebRTC"]),
     ],
     dependencies: [],
     targets: [
-        .binaryTarget(name: "WebRTC", path: "Sources/WebRTC.xcframework")
+        .binaryTarget(name: "HiFiWebRTC", path: "Sources/WebRTC.xcframework")
     ]
 )
