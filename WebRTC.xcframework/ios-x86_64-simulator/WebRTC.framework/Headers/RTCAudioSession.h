@@ -161,6 +161,9 @@ RTC_OBJC_EXPORT
  */
 @property(nonatomic, assign) BOOL isAudioEnabled;
 
+/** Latched when we get a device change. Must be eventually cleared externally (e.g., by AudioDeviceIOS) */
+@property(nonatomic, assign) BOOL deviceChanged;
+
 // Proxy properties.
 @property(readonly) NSString *category;
 @property(readonly) AVAudioSessionCategoryOptions categoryOptions;

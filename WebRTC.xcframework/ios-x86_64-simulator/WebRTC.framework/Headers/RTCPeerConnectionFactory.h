@@ -33,6 +33,9 @@ NS_ASSUME_NONNULL_BEGIN
 RTC_OBJC_EXPORT
 @interface RTC_OBJC_TYPE (RTCPeerConnectionFactory) : NSObject
 
+/* YES for potentially stereo headsets, NO for default voice unit with echo cancellation. Must be set before init. */
+@property (class) BOOL bypassVoiceModule;
+
 /* Initialize object with default H264 video encoder/decoder factories */
 - (instancetype)init;
 
