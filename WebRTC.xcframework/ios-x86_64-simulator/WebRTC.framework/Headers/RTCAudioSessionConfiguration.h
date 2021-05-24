@@ -42,6 +42,8 @@ RTC_OBJC_EXPORT
 + (instancetype)webRTCConfiguration;
 /** Provide a way to override the default configuration. */
 + (void)setWebRTCConfiguration:(RTC_OBJC_TYPE(RTCAudioSessionConfiguration) *)configuration;
+/** Affects the value produced by webRTCConfiguration */
++ (void)setOutputChannels:(NSInteger)number_of_channels;
 
 @end
 
